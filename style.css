@@ -35,3 +35,11 @@ display:flex;
 .main-nav ul li a:hover{
     color: #b3b3b3;
 }
+.user-actions{
+display: flex;
+align-items: center;
+}
+.user-actions a{
+    font-size: 1.2em;
+    margin-left: 20px;
+}
