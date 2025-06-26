@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Eventos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+ <h2> Cadastrto de EVentos</h2>   
+ <form id="formCadastroEventos">
+    <label for="NomeEvento">Nome do Evento</label>
+    <input type="text" id="NomeEvento" name="NomeEvento" required><br>
+    <label for="DataEvento">Data do Evento</label>
+    <input type="date" id="DataEvento" name="DataEvento" required><br>
+    <label for="Modalidade">Modalidade</label>
+    <select name="Modalidade" id="Modalidade">
+    <option value="">Selecione...</option>
+    <option value="Futebol">Futebol</option>
+    <option value="Voleibol">Voleibol</option>  
+    <option value="Basquetebol">Basquetebol</option>
+    <option value="Handebol">Handebol</option>
+    <option value="Luta">Luta</option>
+    </select>
+    <label for="outros">Outros</label>
+    <input type="text" id="outros" name="outros"><br>
+    <label for="LocalEvento">Local do Evento</label>
+    <input type="text" name="LocalEvento" id="LocalEvento" required><br>
+    <label for="Evento">Evento aberto ao público?</label>
+    <input type="checkbox" name="Evento" id="Evento" value="Sim">Sim?
+    <input type="checkbox" name="Evento" id="Evento" value="Não">Não?<br>
+    <button type="submit">Cadastrar Evento</button>
+ </form>
+ <h3>Lista de Eventos já Cadastrados</h3>
+ <ul id="listaEventos">
+ <script src="FormCadastroEventos.js"></script>
+</body>
+</html>

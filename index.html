@@ -1,42 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netflix da shopee</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Menu Inicial</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <header class="header">
-        <div class="logo">
-            <a href="#">Netflix da shopee</a>
-        </div>
-        <nav class="main-nav">
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Series</a></li>
-            <li><a href="#">Filmes</a></li>
-            <li><a href="#">Minha Lista</a></li>
-        </ul>    
-        <div class="user-actions">
-            <a href="#" class="search-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-              </svg></a>
-            <a href="#" class="profile-avatar"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
-                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
-              </svg></a>
-        </div>
+<body class="bg-blue-50 min-h-screen flex flex-col items-center justify-center">
+    <div class="bg-white shadow-lg rounded-lg p-8 max-w-md w-full">
+        <h1 class="text-2x1 font-bold text-center text-blue-700 mb-8"> 
+            Menu  
+        </h1>
+        <!--Menu de navegação-->
+        <nav class="flex flex-col gap-4">
+            <a href="formCadastroEventos.html"
+            class="bg-blue-600 text-white p-3 rounded hover:bg-blue-800
+            text-center transition ">Cadastro de Eventos</a>
+            <a href="formCadastroParticipantes.html"
+            class="bg-blue-600 text-white p-3 rounded hover:bg-blue-800
+            text-center transition ">Cadastro de participantes</a>
         </nav>
-    </header>
-    <footer class="footer">
-        <div class="footer"> 
-            <a href="#">Perguntas frequentes</a>
-            <a href="#">Ajuda</a>
-            <a href="#">Termos de uso</a>
-            <a href="#">Trabalhe Conosco</a>
-            <a href="#">politica de privacidade</a>
-        </div>
-    </footer>
+    </div>
 </body>
 </html>
